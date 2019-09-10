@@ -133,15 +133,15 @@
                                                     <rect key="frame" x="16" y="8" width="382" height="62.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fii-1J-Q06">
-                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="28.5"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="21"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Place name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LQd-MY-gR1">
-                                                            <rect key="frame" x="0.0" y="38" width="382" height="24.5"/>
+                                                            <rect key="frame" x="0.0" y="36.5" width="382" height="26"/>
                                                             <nil key="textColor"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                                             <connections>
                                                                 <outlet property="delegate" destination="tvy-jP-kXS" id="bqj-Xf-caP"/>
@@ -169,15 +169,15 @@
                                                     <rect key="frame" x="16" y="8" width="382" height="62.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yB-2J-Dah">
-                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="28.5"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="21"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Place location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NcO-s1-uKI">
-                                                            <rect key="frame" x="0.0" y="38" width="382" height="24.5"/>
+                                                            <rect key="frame" x="0.0" y="36.5" width="382" height="26"/>
                                                             <nil key="textColor"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                                             <connections>
                                                                 <outlet property="delegate" destination="tvy-jP-kXS" id="haw-Rf-rwQ"/>
@@ -205,15 +205,15 @@
                                                     <rect key="frame" x="16" y="8" width="382" height="62.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHT-LZ-F8B">
-                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="28.5"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="21"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" placeholder="Place type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oPc-gx-2IG">
-                                                            <rect key="frame" x="0.0" y="38" width="382" height="24.5"/>
+                                                            <rect key="frame" x="0.0" y="36.5" width="382" height="26"/>
                                                             <nil key="textColor"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                                             <connections>
                                                                 <outlet property="delegate" destination="tvy-jP-kXS" id="hBH-Cy-pBc"/>
@@ -241,13 +241,21 @@
                     <navigationItem key="navigationItem" title="New places" id="jfr-5w-YBK">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bme-LK-CNg">
                             <connections>
-                                <segue destination="shq-nI-3Pp" kind="unwind" unwindAction="cancelAction:" id="tUI-lI-LiA"/>
+                                <action selector="cancelAction:" destination="tvy-jP-kXS" id="CtI-Hd-fVY"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="D3P-mn-r56"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="D3P-mn-r56">
+                            <connections>
+                                <segue destination="shq-nI-3Pp" kind="unwind" unwindAction="unwindSegue:" id="XpC-de-Qr3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="imageOfPlace" destination="fUe-KG-oC7" id="ADv-k3-aA0"/>
+                        <outlet property="placeImage" destination="fUe-KG-oC7" id="ADv-k3-aA0"/>
+                        <outlet property="placeLocation" destination="NcO-s1-uKI" id="cX5-bf-THz"/>
+                        <outlet property="placeName" destination="LQd-MY-gR1" id="d11-CK-kLU"/>
+                        <outlet property="placeType" destination="oPc-gx-2IG" id="d7o-X1-8bn"/>
+                        <outlet property="saveButton" destination="D3P-mn-r56" id="r1l-ba-k1q"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m6X-Wl-NqO" userLabel="First Responder" sceneMemberID="firstResponder"/>

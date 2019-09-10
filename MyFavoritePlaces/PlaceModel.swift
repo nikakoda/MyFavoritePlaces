@@ -6,22 +6,33 @@
 //  Copyright © 2019 Nika Perepelkina. All rights reserved.
 //
 
-import Foundation
+import RealmSwift
 
-
-struct Place {
-    var name: String
-    var location: String
-    var type: String
-    var image: String
+class Place: Object {
     
-    static let restaurantNames = ["Перцы", "Mama Roma", "Delorean", "Академия кофе", "New York"]
+    @objc dynamic var name = ""
+    @objc dynamic var location: String?
+    @objc dynamic var type: String?
+    @objc dynamic var imageData: Data?
     
-    static func getPlaces() -> [Place] {
-        var places = [Place]()
-        for place in restaurantNames {
-            places.append(Place(name: place, location: "Красноярск", type: "Кафе", image: place))
-        }
-        return places
+    // let restaurantNames = ["Перцы", "Mama Roma", "Delorean", "Академия кофе", "New York"]
+    
+  //  static func getPlaces() -> [Place] {
+  //      var places = [Place]()
+  //      for place in restaurantNames {
+  //          places.append(Place(name: place, location: "Красноярск", type: "Кафе", image: nil, restaurantImage: place))
+  //      }
+  //      return places
+  //  }
+    
+    
+    convenience init(name: String, location: String?, type: String?, imageData: Data?) {
+        self.init()
+        self.name = name
+        self.location = location
+        self.type = type
+        self.imageData = imageData
     }
+    
+    
 }
